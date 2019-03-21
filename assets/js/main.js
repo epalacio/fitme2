@@ -107,9 +107,12 @@
 
 			$banner.scrollex({
 				bottom:		$header.outerHeight(),
-				terminate:	function() { $header.removeClass('alt'); },
-				enter:		function() { $header.addClass('alt'); },
-				leave:		function() { $header.removeClass('alt'); }
+				terminate:	function() { $header.removeClass('alt');
+					document.getElementById("logo").src = "./images/logo-black.svg"; },
+				enter:		function() { $header.addClass('alt');
+					document.getElementById("logo").src = "./images/logo.svg"; },
+				leave:		function() { $header.removeClass('alt');
+			 		document.getElementById("logo").src = "./images/logo-black.svg";}
 			});
 
 		}
