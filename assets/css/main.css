@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -68,6 +69,12 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+@font-face {
+    font-family: 'GillSans';
+    src: url('../fonts/GillSans-Bold.ttf'),
+         url('../fonts/GillSans-Light.ttf');
 }
 
 /* Basic */
@@ -165,12 +172,12 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 3.25em;
+		font-size: 3.45em;
 		line-height: 1.3;
 	}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2.4em;
 	}
 
 	h3 {
@@ -191,6 +198,10 @@ input, select, textarea {
 	h6 {
 		font-size: 1em;
 		font-weight: 400;
+	}
+
+	h1, h2 {
+		font-family: 'Oswald', sans-serif;
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -2876,6 +2887,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="number"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2889,6 +2901,7 @@ input, select, textarea {
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
+		transition: all 0.2s;
 		width: 100%;
 	}
 
@@ -2898,6 +2911,21 @@ input, select, textarea {
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
+		}
+
+		input[type="text"]:active,
+		input[type="password"]:active,
+		input[type="email"]:active,
+		input[type="number"]:active,
+		select:active,
+		textarea:active,
+		input[type="text"]:hover,
+		input[type="password"]:hover,
+		input[type="email"]:hover,
+		input[type="number"]:hover,
+		select:hover,
+		textarea:hover {
+			box-shadow: 1px 1px 4px rgba(245, 168, 0, 0.7);
 		}
 
 	select {
@@ -2920,6 +2948,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="number"],
 	select {
 		height: 3.5em;
 	}
@@ -4142,7 +4171,7 @@ input, select, textarea {
 		background: #f5a800;
 		color: #ffffff;
 		left: 0;
-		padding: 1em 1.5em;
+		padding: 0.8em 1.5em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -4228,6 +4257,7 @@ input, select, textarea {
 			}
 
 			#header > .logo > a {
+				font-family: 'GillSans', sans-serif;
 				font-size: 1.75em;
 			}
 
@@ -4264,8 +4294,16 @@ input, select, textarea {
 			}
 
 				#header > nav > ul > li {
+					border-bottom: 2px solid transparent;
 					margin-left: 2.25em;
 					padding: 0;
+					padding-bottom: 2px;
+					transition: all 0.2s;
+				}
+
+				#header > nav > ul > li:active,
+				#header > nav > ul > li:hover {
+					border-bottom: 2px solid #fff;
 				}
 
 					#header > nav > ul > li > ul {
@@ -4898,7 +4936,7 @@ input, select, textarea {
 		#footer input[type="button"],
 		#footer button,
 		#footer .button {
-			background-color: rgba(255, 108, 55, 0.75);
+			background-color: rgba(255, 108, 55, 0.85);
 			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.75);
 			color: #fff !important;
 		}
@@ -4952,6 +4990,7 @@ input, select, textarea {
 		#footer input[type="text"],
 		#footer input[type="password"],
 		#footer input[type="email"],
+		#footer input[type="number"],
 		#footer select,
 		#footer textarea {
 			background-color: transparent;
@@ -4961,6 +5000,7 @@ input, select, textarea {
 			#footer input[type="text"]:focus,
 			#footer input[type="password"]:focus,
 			#footer input[type="email"]:focus,
+			#footer input[type="number"]:focus,
 			#footer select:focus,
 			#footer textarea:focus {
 				border-color: #f3a800;
