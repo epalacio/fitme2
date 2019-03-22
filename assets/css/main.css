@@ -4135,6 +4135,10 @@ input, select, textarea {
 				padding: 5em 0 3em 0 ;
 			}
 
+			.wrapper.style1 {
+				background-attachment: scroll;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4146,6 +4150,10 @@ input, select, textarea {
 				.wrapper > .inner {
 					max-width: calc(100% - 3em);
 				}
+
+			.wrapper.style1 {
+				background-attachment: scroll;
+			}
 
 		}
 
