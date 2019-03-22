@@ -2430,7 +2430,7 @@ input, select, textarea {
 				.quotes > article .author .name {
 					color: #f5a800;
 					display: block;
-					font-size: 1.4em;
+					font-size: 1.8em;
 					font-weight: 400;
 					margin: 0 0 0.5em 0;
 				}
@@ -2849,6 +2849,10 @@ input, select, textarea {
 
 				form > .fields > .field.quarter {
 					width: calc(25% - 0.375em);
+				}
+
+				form .field p {
+					margin-bottom: 0;
 				}
 
 		@media screen and (max-width: 480px) {
@@ -4889,7 +4893,7 @@ input, select, textarea {
 	#footer {
 		background-color: #fff;
 		color: #333333;
-		padding: 7.5em 0 5.5em 0 ;
+		padding: 7.5em 0 2.5em 0 ;
 		background-color: #fff;
 	}
 
