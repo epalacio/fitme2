@@ -4976,6 +4976,27 @@ input, select, textarea {
 
 		}
 
+/* Blog Posts */
+
+	.blog-post img {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.blog-post h1,
+	.blog-post a {
+		color: #f5a800;
+	}
+
+	.blog-post p {
+		font-size: 1.2em;
+	}
+
+	.blog-post a {
+		font-size: 1.5em;
+	}
+
 /* Footer */
 
 	#footer {
