@@ -20,10 +20,6 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-html {
-  scroll-behavior: smooth;
-}
-
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -97,14 +93,11 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
-
-	body {
-		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3222,7 +3215,7 @@ input, select, textarea {
 .fg {
 	background-image: url(../../images/felipe-profile.jpeg);
 	background-position: 50% 2%;
-	background-size: 235%;
+	background-size: 212%;
 }
 
 #nosotros h3 {
