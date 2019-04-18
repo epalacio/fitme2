@@ -2100,6 +2100,7 @@ input, select, textarea {
 
 	.blog-01 {
 		background: url(../../images/blog/blog-01.jpg);
+		background-position: 50% 75%;
 	}
 
 	.blog-02 {
@@ -2108,11 +2109,35 @@ input, select, textarea {
 
 	.blog-03 {
 		background: url(../../images/blog/blog-03.jpg);
+		background-position: 50% 40%;
 	}
 
 	.blog-04 {
 		background: url(../../images/blog/blog-04.jpg);
 	}
+
+	.blog-05 {
+		background: url(../../images/blog/blog-05.jpg);
+		background-position: 50% 36%;
+	}
+
+	.blog-06 {
+		background: url(../../images/blog/blog-06.jpg);
+	}
+
+	.blog-07 {
+		background: url(../../images/blog/blog-07.jpg);
+		background-position: 50% 32%;
+	}
+
+	.blog-08 {
+		background: url(../../images/blog/blog-08.jpg);
+		background-position: 50% 75%;
+	}
+
+		.blog-with-table img {
+			max-width: 100% !important;
+		}
 
 
 	.blog-snippet {
@@ -4957,13 +4982,15 @@ input, select, textarea {
 /* Blog Posts */
 
 	.blog-post img {
-		width: 100%;
-		max-width: 100%;
+		display: block;
 		height: auto;
+		margin: auto;
+		margin-bottom: 30px;
+		max-width: 750px;
+		width: 100%;
 	}
 
-	.blog-post h1,
-	.blog-post a {
+	.blog-post h1 {
 		color: #f5a800;
 	}
 
@@ -4972,8 +4999,14 @@ input, select, textarea {
 	}
 
 	.blog-post a {
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
+
+	.blog-post i,
+	.blog-post a {
+		color: #ff6c37;
+	}
+
 
 /* Footer */
 
