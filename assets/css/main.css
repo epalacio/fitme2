@@ -3257,6 +3257,7 @@ input, select, textarea {
 	}
 
 		ol li {
+			font-size: 1.2em;
 			padding-left: 0.25em;
 		}
 
@@ -3267,6 +3268,7 @@ input, select, textarea {
 	}
 
 		ul li {
+			font-size: 1.2em;
 			padding-left: 0.5em;
 		}
 
@@ -4996,10 +4998,6 @@ input, select, textarea {
 
 	.blog-post p {
 		font-size: 1.2em;
-	}
-
-	.blog-post a {
-		font-size: 1.3em;
 	}
 
 	.blog-post i,
