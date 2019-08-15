@@ -2135,6 +2135,11 @@ input, select, textarea {
 		background-position: 50% 75%;
 	}
 
+	.blog-09 {
+		background: url(../../images/blog/blog-09.jpg);
+		background-position: 50% 35%;
+	}
+
 		.blog-with-table img {
 			max-width: 100% !important;
 		}
